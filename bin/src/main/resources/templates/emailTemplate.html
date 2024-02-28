@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title> 
+		 <title th:text="${title}">Default Title</title>
+	</title>
+</head>
+
+<body>
+	<h1 th:text="${title}">Default Title</h1>
+	<p>Hello <span th:text="${userName}">[Name]</span>,</p>
+	<p> We are sending you this email because you requested a password reset.
+		Use given OTP for reset password.
+
+	</p>
+	<p>Your OTP : <span th:text="${OTP}">[Dynamic Field]</span></p>
+
+	OTP for reset password ??????
+
+	OTP generated time ???????
+	OTP will be expired in 5 min : ????????
+
+	If you didn’t request a password reset, you can ignore this email.
+	Your password will not be changed.
+
+	Thanks
+	SANJEEVANI
+	ADMMIN DEPARTMENT.
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+db:
+  driver: com.mysql.cj.jdbc.Driver
+  password: root
+  url: jdbc:mysql://localhost:3307/MFP-Sanjeevani
+  username: root
+  
+entitymanager:
+  packagesToScan: com
+  
+hibernate:
+  dialect: org.hibernate.dialect.MySQL8Dialect
+  format_sql: false
+  hbm2ddl:
+    auto: update
+  show_sql: true
+  
+logging:
+  file:
+    name: MFPAppLogs/MFP.log
+  pattern:
+    console: '%d{yyyy-MM-dd HH:mm:ss} - %msg%n'
+    file: '%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n'
+
+server:
+  port: 8888
+  
+spring:
+  application:
+    name: MFP-SERVICES
+  mail:
+    host: smtp.gmail.com
+    password: glld gtrb ipzq jzia
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+    username: kapgatemam@gmail.com
+#attendance2715
+user:
+  roles: ROLE_ADMIN,ROLE_DOCTOR,ROLE_PHARMACIST,ROLE_RECEPTIONIST
